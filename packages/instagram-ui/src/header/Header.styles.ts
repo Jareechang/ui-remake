@@ -8,7 +8,7 @@ export const Appbar = theme => css`
   box-shadow: none;
   border-top: 1px solid;
   border-bottom: 1px solid;
-  border-color: ${theme.palette.defaultBorderColor};
+  border-color: ${theme.customColors.border.default};
 `;
 
 export const Main = css`
@@ -32,7 +32,7 @@ export const CommonIcon = theme => css`
 
 export const IconRightButtons = theme => css`
   background: none;
-  color: ${theme.palette.defaultBorderColor};
+  color: ${theme.customColors.border.default};
   &:hover {
     background: none;
     color: ${theme.palette.secondary.main};

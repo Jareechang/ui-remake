@@ -3,12 +3,12 @@ import { css } from '@emotion/css';
 export const searchSection = theme => css`
   display: flex;
   height: ${theme.spacing(2)}px;
-  border: 1px solid ${theme.palette.defaultBorderColor};
+  border: 1px solid ${theme.customColors.border.default};
   padding: ${theme.spacing(0.75, 0.75)};
   margin: ${theme.spacing(0, 4)};
-  background: ${theme.palette.default.main};
+  background: ${theme.palette.secondary.light};
   path {
-    fill : ${theme.palette.defaultBorderColor}
+    fill : ${theme.customColors.border.default}
   }
 `;
 
@@ -21,7 +21,7 @@ export const searchInput = theme => css`
   padding: ${theme.spacing(1, 1, 1, 1)};
   transition: ${theme.transitions.create('width')};
   font-size: 14px;
-  width: '100%';
+  width: 100%;
   ${theme.breakpoints.up('md')} {
     width: 20ch;
   }

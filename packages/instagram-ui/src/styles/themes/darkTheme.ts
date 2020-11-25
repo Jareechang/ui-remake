@@ -3,23 +3,24 @@ import { red } from '@material-ui/core/colors';
 
 // Create a theme instance.
 const darkTheme = createMuiTheme({
+  customColors: {
+    border: {
+      default: '#dbdbdb'
+    }
+  },
   palette: {
     primary: {
       main: '#262626',
     },
     secondary: {
-      main: '#fffff',
-    },
-    default: {
-      main: '#fafafa'
+      main: '#FFFFFF',
     },
     error: {
       main: red.A400,
     },
     background: {
       default: '#fff',
-    },
-    defaultBorderColor: '#dbdbdb'
+    }
   },
   typography: {
     body1: {
