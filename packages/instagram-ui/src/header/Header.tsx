@@ -17,7 +17,7 @@ import SendIcon from '@material-ui/icons/Send';
 import ExploreIcon from '@material-ui/icons/Explore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
-import { SearchBar, types } from '../search-bar';
+import { SearchBar } from '../search-bar';
 import * as styles from './Header.styles';
 
 interface HeaderProps {
@@ -30,8 +30,8 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = (props) => {
   const [setShowCloseIcon, showCloseIcon] = React.useState(true);
-  const text = props.text || 'I’m a header';
-  const theme: types = useTheme();
+  const text : string = props.text || 'I’m a header';
+  const theme : string = useTheme();
   return (
     <>
       <AppBar position="static" className={styles.Appbar(theme)}>

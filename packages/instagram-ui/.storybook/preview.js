@@ -10,7 +10,6 @@ export const decorators = [
   (Story) => {
     const [isDarkTheme, toggleTheme] = React.useState(false);
     const theme = isDarkTheme ? darkTheme : lightTheme;
-    console.log('isDark: ', isDarkTheme);
     return (
       <>
         <StylesProvider injectFirst>
