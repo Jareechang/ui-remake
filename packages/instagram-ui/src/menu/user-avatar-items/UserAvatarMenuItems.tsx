@@ -9,6 +9,7 @@ import {
   SavedIcon,
   ProfileIcon,
   SettingsIcon,
+  SwitchAccountsIcon
 } from './icons';
 
 import * as styles from './UserAvatarMenuItems.styles';
@@ -52,6 +53,9 @@ export const UserAvatarMenuItems: React.FC<UserAvatarMenuItemsProps> = (props) =
         break;
       case 'settings':
         iconComponent = <SettingsIcon />;
+        break;
+      case 'switch-accounts':
+        iconComponent = <SwitchAccountsIcon />;
         break;
       default:
         // noop

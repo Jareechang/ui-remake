@@ -31,6 +31,12 @@ MenuItemWithSettingsIcon.args = {
   iconType: 'settings'
 };
 
+export const MenuItemWithSwitchAccountsIcon = Template.bind({});
+MenuItemWithSwitchAccountsIcon.args = {
+  text: 'Switch Accounts',
+  iconType: 'switch-accounts'
+};
+
 export const MenuItemWithCustomText = Template.bind({});
 MenuItemWithCustomText.args = {
   text: 'My Menu Text',
