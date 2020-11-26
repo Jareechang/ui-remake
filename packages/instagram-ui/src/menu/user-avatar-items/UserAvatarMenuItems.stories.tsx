@@ -11,7 +11,9 @@ export default {
 const Template = (args) => <UserAvatarMenuItems {...args} />;
 
 export const DefaultMenuItem = Template.bind({});
-DefaultMenuItem.args = {};
+DefaultMenuItem.args = {
+  text: 'Profile'
+};
 
 export const MenuItemWithProfileIcon = Template.bind({});
 MenuItemWithProfileIcon.args = {
