@@ -38,6 +38,6 @@ export const IconRightButtons = theme => css`
     color: ${theme.palette.secondary.main};
   }
   font-size: 1.2em;
-  padding: 0;
+  padding: ${theme.spacing(1, 0)};
 
 `
