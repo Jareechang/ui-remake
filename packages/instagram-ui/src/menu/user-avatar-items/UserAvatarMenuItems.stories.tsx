@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeIcon from '@material-ui/icons/Home';
 
-import { UserAvatarMenuItems } from './UserAvatarMenuItems';
+import UserAvatarMenuItems from './UserAvatarMenuItems';
 
 export default {
   title: 'Custom/UserAvatarMenuItems',

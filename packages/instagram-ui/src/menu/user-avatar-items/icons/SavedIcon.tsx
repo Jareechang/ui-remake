@@ -13,6 +13,7 @@ const SavedIcon: React.FC<SavedIcon> = (props) => {
   const theme = useTheme();
   return (
     <BookmarkBorderIcon
+      color="secondary"
       className={cx(styles.CommonIcon(theme))}
     />
   );

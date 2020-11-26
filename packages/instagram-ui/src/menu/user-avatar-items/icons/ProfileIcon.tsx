@@ -13,6 +13,7 @@ const ProfileIcon: React.FC<ProfileIcon> = (props) => {
   const theme = useTheme();
   return (
     <PersonOutline
+      color="secondary"
       className={cx(styles.CommonIcon(theme))}
     />
   );

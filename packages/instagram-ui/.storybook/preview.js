@@ -15,13 +15,13 @@ export const decorators = [
         <StylesProvider injectFirst>
           <ThemeProvider theme={theme}>
             <Story />
+            <div style={{ marginTop: '2em' }}>
+              <Button
+                variant="primary"
+                onClick={_ => toggleTheme(!isDarkTheme)}>Toggle Theme</Button>
+            </div>
           </ThemeProvider>
         </StylesProvider>
-        <div style={{ marginTop: '2em' }}>
-          <Button
-            variant="primary"
-            onClick={_ => toggleTheme(!isDarkTheme)}>Toggle Theme</Button>
-        </div>
       </>
     )
   },

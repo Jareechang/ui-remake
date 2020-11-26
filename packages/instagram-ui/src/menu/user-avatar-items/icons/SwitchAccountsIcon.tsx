@@ -13,6 +13,7 @@ const SwitchAccountsIcon: React.FC<SwitchAccountsIcon> = (props) => {
   const theme = useTheme();
   return (
     <AutorenewOutlinedIcon
+      color="secondary"
       className={cx(styles.CommonIcon(theme))}
     />
   );

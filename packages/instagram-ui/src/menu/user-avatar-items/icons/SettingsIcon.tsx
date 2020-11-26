@@ -13,6 +13,7 @@ const SettingsIcon: React.FC<SettingsIcon> = (props) => {
   const theme = useTheme();
   return (
     <MuiSettingsIcon
+      color="secondary"
       className={cx(styles.CommonIcon(theme))}
     />
   );

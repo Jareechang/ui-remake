@@ -1,5 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import { red } from '@material-ui/core/colors';
+import { common, red } from '@material-ui/core/colors';
 
 // Create a theme instance.
 const darkTheme = createMuiTheme({
@@ -13,13 +13,16 @@ const darkTheme = createMuiTheme({
       main: '#262626',
     },
     secondary: {
-      main: '#FFFFFF',
+      main: common.white,
     },
     error: {
       main: red.A400,
     },
     background: {
-      default: '#fff',
+      default: common.white,
+    },
+    action: {
+      hover: 'rgba(255, 255, 255, 0.08)',
     }
   },
   typography: {

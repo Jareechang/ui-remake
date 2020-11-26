@@ -1,7 +1,8 @@
 import { css } from '@emotion/css';
 
-export const Menu = (theme: any) => css`
-  padding: 1em 0;
+export const MenuItem = (theme: any) => css`
+  justify-content: start;
+  padding: ${theme.spacing(1, 0.5)};
 `;
 
 export const Body = (theme: any) => css`
