@@ -22,17 +22,17 @@ const SearchBar: React.FC<SearchBarProps> = (props) => {
     <div className={styles.searchSection(theme)}>
         <SearchIcon className={styles.searchIcon} />
         <InputBase
-        className={styles.searchInput(theme)}
-        placeholder="search"
-        inputProps={{ 'aria-label': 'search' }}
-        endAdornment={
-          <InputAdornment position="end">
-            <IconButton
-              className={styles.searchIconButton(theme)}
-              onClick={props.onClick}>
-              <ClearIcon className={styles.searchCloseIcon(theme)} />
-            </IconButton>
-          </InputAdornment>
+          className={styles.searchInput(theme)}
+          placeholder="search"
+          inputProps={{ 'aria-label': 'search' }}
+          endAdornment={
+            <InputAdornment position="end">
+              <IconButton
+                className={styles.searchIconButton(theme)}
+                onClick={props.onClick}>
+                <ClearIcon className={styles.searchCloseIcon(theme)} />
+              </IconButton>
+            </InputAdornment>
         } />
     </div>
   );
