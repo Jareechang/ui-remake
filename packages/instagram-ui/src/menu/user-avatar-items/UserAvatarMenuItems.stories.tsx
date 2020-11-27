@@ -12,7 +12,13 @@ const Template = (args) => <UserAvatarMenuItems {...args} />;
 
 export const DefaultMenuItem = Template.bind({});
 DefaultMenuItem.args = {
-  text: 'Profile'
+  text: 'Profile',
+};
+
+export const DefaultMenuItemWithStyledSystem = Template.bind({});
+DefaultMenuItemWithStyledSystem.args = {
+  text: 'Profile',
+  m: 1
 };
 
 export const MenuItemWithProfileIcon = Template.bind({});

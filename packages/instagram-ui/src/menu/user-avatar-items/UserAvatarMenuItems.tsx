@@ -39,7 +39,6 @@ const UserAvatarMenuItems: React.FC<UserAvatarMenuItemsProps> = (props) => {
     text = ''
   } = props;
 
-  //
   const renderIcon = React.useCallback(() => {
     let iconComponent = null;
     switch (iconType) {
@@ -64,7 +63,7 @@ const UserAvatarMenuItems: React.FC<UserAvatarMenuItemsProps> = (props) => {
 
   return (
       <MenuItem
-        className={styles.MenuItem(theme)}>
+        className={styles.MenuItem({ theme, ...props })}>
         {renderIcon()}
         <Typography
           className={styles.Body(theme)}

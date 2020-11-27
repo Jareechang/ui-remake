@@ -1,8 +1,10 @@
 import { css } from '@emotion/css';
+import { space } from 'styled-system';
 
-export const MenuItem = (theme: any) => css`
+export const MenuItem = (props: any) => css`
   justify-content: start;
-  padding: ${theme.spacing(1, 0.5)};
+  padding: ${props.theme.spacing(1, 0.5)};
+  ${space(props)}
 `;
 
 export const Body = (theme: any) => css`
