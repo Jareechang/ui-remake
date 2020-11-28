@@ -1,5 +1,4 @@
 import React from 'react';
-import { cx } from '@emotion/css';
 import IconButton from '@material-ui/core/IconButton';
 import InputBase from '@material-ui/core/InputBase';
 import InputAdornment from '@material-ui/core/InputAdornment';
